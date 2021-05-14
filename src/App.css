@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+:root {
+  --primary-white: #ffffff;
+  --primary-light-grey: #f4f4f4;
+  --primary-grey: #ccd1d9;
+  --primary-dark-grey: #666666;
+  --primary-orange: #f9ab00;
+  --primary-dark: rgb(52, 58, 64);
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
+  --primary-black: #040404;
+  --primary-transparent-black: rgba(0, 0, 0, 0.7);
+  --primary-green: green;
+  --primary-component: #18d26e;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto Condensed", sans-serif !important;
+  background: #040404 !important;
+  padding-top: 70px;
+  color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  padding: 0px;
+  margin: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex-todos {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.line-mf {
+  width: 100% !important;
+  height: 5px;
+  background-color: var(--primary-component) !important;
+  margin: 0 auto;
+  margin-bottom: 50px !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-main-cv {
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: var(--primary-component);
+  border-radius: 0;
+  padding: 0.75rem 2rem 0.75rem 2rem;
+  color: #fff;
+}
+
+.btn-main-cv:hover {
+  text-decoration: none;
+  background-color: var(--primary-component);
+  color: #fff;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.badge-secondary,
+.btn-primary {
+  background-color: var(--primary-component) !important;
+  border-radius: 0 !important;
+  color: #fff;
+  border: none !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: none !important;
+}
+
+.contador {
+  color: var(--primary-component) !important;
+  font-weight: "bold" !important;
+}
+
+.parrafo-pointers {
+  cursor: pointer;
+}
+
+.complete {
+  text-decoration: line-through ;
+  cursor: pointer;
+}
+
+input {
+  background-color: #040404 !important;
+  color: #fff !important;
+  border-radius: 0 !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-bottom: 2px solid var(--primary-component) !important;
 }
